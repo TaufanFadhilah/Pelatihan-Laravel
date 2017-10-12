@@ -29,7 +29,7 @@
                   <td>Rp. {{number_format($row->harga)}}</td>
                   <td>{{$row->status}}</td>
                   <td>
-                    <button class="btn btn-warning">Edit</button>
+                    <a href="{{route('homestay.edit',['homestay' => $row->id])}}"><button class="btn btn-warning">Edit</button></a>
                     <form action="{{route('homestay.destroy',['homestay' => $row->id])}}" method="post">
                       {{csrf_field()}}
                       <input type="hidden" name="_method" value="DELETE" >

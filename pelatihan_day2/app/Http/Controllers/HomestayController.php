@@ -63,7 +63,7 @@ class HomestayController extends Controller
      */
     public function edit(Homestay $homestay)
     {
-        //
+        return view('homestay.edit',compact('homestay'));
     }
 
     /**
@@ -75,7 +75,14 @@ class HomestayController extends Controller
      */
     public function update(Request $request, Homestay $homestay)
     {
-        //
+        $homestay->nama = $request->nama;
+        $homestay->alamat = $request->alamat;
+        $homestay->no_telp = $request->no_telp;
+        $homestay->deskripsi = $request->deskripsi;
+        $homestay->harga = $request->harga;
+        $homestay->status = $request->status;
+        $homestay->save();
+        return redirect(route('homestay.index'));
     }
 
     /**
