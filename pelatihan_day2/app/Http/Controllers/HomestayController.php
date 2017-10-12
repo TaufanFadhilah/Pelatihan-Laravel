@@ -37,15 +37,11 @@ class HomestayController extends Controller
      */
     public function store(Request $request)
     {
-        homestay::create([
-          'nama' => $request->nama
-        ]);
-        return redirect(route('homestay.index'));
-        // $homestay = new Homestay($request->all());
-        // if ($homestay->save()) {
-        //   return redirect()->route('homestay.index');
-        // }
-        // return $request;
+        $homestay = new Homestay($request->all());
+        if ($homestay->save()) {
+          return redirect()->route('homestay.index');
+        }
+        return $request;
     }
 
     /**

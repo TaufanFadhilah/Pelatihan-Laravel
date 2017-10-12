@@ -15,7 +15,7 @@
               </div>
               <div class="form-group">
                 <label for="address">Address</label>
-                <textarea class="form-control" name="address"></textarea>
+                <textarea class="form-control" name="alamat"></textarea>
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
