@@ -86,6 +86,7 @@ class HomestayController extends Controller
      */
     public function destroy(Homestay $homestay)
     {
-        //
+        $homestay->delete();
+        return redirect(route('homestay.index'));
     }
 }
