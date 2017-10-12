@@ -15,7 +15,7 @@
               </div>
               <div class="form-group">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" name="alamat">
+                <textarea class="form-control" name="address"></textarea>
               </div>
               <div class="form-group">
                 <label for="phone">Phone</label>
@@ -23,7 +23,7 @@
               </div>
               <div class="form-group">
                 <label for="desc">Description</label>
-                <input type="text" class="form-control" id="desc" name="deskripsi">
+                <textarea class="form-control" name="deskripsi"></textarea>
               </div>
               <div class="form-group">
                 <label for="price">Price</label>

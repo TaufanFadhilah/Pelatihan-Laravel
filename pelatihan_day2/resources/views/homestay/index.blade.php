@@ -17,6 +17,7 @@
                 <th>Desc</th>
                 <th>Price</th>
                 <th>Status</th>
+                <th>Action</th>
               </tr>
               @foreach ($data as $key => $row)
                 <tr>
@@ -27,6 +28,10 @@
                   <td>{{$row->deskripsi}}</td>
                   <td>Rp. {{number_format($row->harga)}}</td>
                   <td>{{$row->status}}</td>
+                  <td>
+                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-warning">Edit</button>
+                  </td>
                 </tr>
               @endforeach
             </table>
