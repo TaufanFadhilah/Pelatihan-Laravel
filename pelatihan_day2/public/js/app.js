@@ -773,8 +773,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(9);
-__webpack_require__(40);
-(function webpackMissingModule() { throw new Error("Cannot find module \"D:\\kerjaan\\Pelatihan-Laravel\\pelatihan_day2\\bower_components\\bootstrap\\bootstrap.scss\""); }());
+module.exports = __webpack_require__(40);
 
 
 /***/ }),
