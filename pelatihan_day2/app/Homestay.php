@@ -3,12 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Spatie\Permission\Traits\HasRoles;
 class Homestay extends Model
 {
-    //
-    // protected $primaryKey = ''; digunakan jika nama primary key yang kita gunaakn berbeda
-    // protected $timestamps = false; digunakan jika kita ingin mematikan fitur timestamps
+    use HasRoles;
+    protected $guard_name = 'web';
     protected $fillable = [
         'nama',
         'alamat',
