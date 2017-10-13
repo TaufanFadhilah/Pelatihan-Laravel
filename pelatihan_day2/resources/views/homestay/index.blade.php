@@ -7,7 +7,15 @@
           <div class="panel-heading">Homestay</div>
 
           <div class="panel-body">
-            <a href="{{route('homestay.create')}}"><button class="btn btn-default">Add Homestay</button></a>
+            @role('writer')
+                I am loggin
+            @else
+                I am not loggin
+            @endrole
+            @can('edit homestay')
+              <a href="{{route('homestay.create')}}"><button class="btn btn-default">Add Homestay</button></a>
+            @endcan
+
             <table class="table">
               <tr>
                 <th>No.</th>

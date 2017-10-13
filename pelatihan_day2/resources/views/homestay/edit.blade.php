@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <div class="panel panel-default">
-          <div class="panel-heading">Edit Homestay</div>
+          <div class="panel-heading">Edit {{$homestay->nama}}</div>
 
           <div class="panel-body">
             <form action="{{route('homestay.update',['homestay' => $homestay->id])}}" method="post">
